@@ -12,7 +12,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 
 const appRoutes:Routes=[
   {path:'create',component:CreatedeckComponent},
-  {path:'draw/:deckid',component:DrawdeckComponent}
+  {path:'draw/:deckid',component:DrawdeckComponent},
+  {path:'**',redirectTo:'/create'}
 ]
 @NgModule({
   declarations: [
