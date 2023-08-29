@@ -1,0 +1,20 @@
+<form [formGroup]="form" (submit)="process()">
+    <table>
+        <tr>
+            <td>
+                Draw
+            </td>
+            <td>
+                <input type="number" step="1" formControlName="draw">
+            </td>
+        </tr>
+        <button type="submit">submit</button>
+    </table>
+</form>
+
+
+<div *ngFor="let d of cards">
+    <img src="{{d.image}}">
+</div>
+<div>Remaining:{{remaining}}</div>
+
